@@ -1,0 +1,11 @@
+import machine
+import time
+
+# Configuración del LED integrado (usualmente en GPIO 2)
+led = machine.Pin(2, machine.Pin.OUT)
+
+while True:
+    led.on()  # Enciende el LED
+    time.sleep(1)  # Espera 1 segundo
+    led.off()  # Apaga el LED
+    time.sleep(1)  # Espera 1 segundo
